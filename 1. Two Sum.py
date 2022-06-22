@@ -27,12 +27,12 @@ def twoSum(nums, target):
 # approach 2
 # class Solution:
 #     def twoSum(self, nums: List[int], target: int) -> List[int]:
-def twoSum(nums, target):
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            num = nums[i]+nums[j]                
-            if num == target:
-                return [i, j]
+# def twoSum(nums, target):
+#     for i in range(len(nums)):
+#         for j in range(i+1, len(nums)):
+#             num = nums[i]+nums[j]                
+#             if num == target:
+#                 return [i, j]
 
 ## Driver code
 if __name__=='__main__':

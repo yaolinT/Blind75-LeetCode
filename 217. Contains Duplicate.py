@@ -25,7 +25,7 @@ def containsDuplicate(nums):
 #         return True
 #     else:
 #         return False
-####
+#################
 
 # approach 2 (other possible solution)
 # def containsDuplicate(nums):    
