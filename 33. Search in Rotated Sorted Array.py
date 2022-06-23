@@ -21,14 +21,36 @@
 # Output: -1
 ###############################################################
 
-# approach not with O(log n) runtime complexity
+# approach 1 (binary search, in O(logn))
+# reference: https://www.youtube.com/watch?time_continue=774&v=U8XENwh8Oy8&feature=emb_title
 # class Solution:
 #     def search(self, nums: List[int], target: int) -> int:
 def search(nums, target):
-    for i in range(len(nums)):
-        if target == nums[i]:            
-            return i
+    l, r = 0, len(nums)-1
+    while l <= r:
+        m = (l+r)//2
+        if target == nums[m]:
+            return m
+        if nums[l] <= nums[m]:
+            if target > nums[m] or target < nums[l]:
+                l = m + 1
+            else:
+                r = m - 1
+        else:
+            if target < nums[m] or target > nums[r]:
+                r = m - 1
+            else:
+                l = m + 1
     return -1
+
+# approach 2 (in O(n))
+# # class Solution:
+# #     def search(self, nums: List[int], target: int) -> int:
+# def search(nums, target):
+#     for i in range(len(nums)):
+#         if target == nums[i]:            
+#             return i
+#     return -1
 
 ## Driver code
 if __name__=='__main__':

@@ -15,8 +15,9 @@
 # Output: [0,1]
 ###############################################################
 
-# approach 1
+# approach 1 (O(n^2))
 # class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
 def twoSum(nums, target):
     for i in range(len(nums)):
         a = target - nums[i]
@@ -24,7 +25,7 @@ def twoSum(nums, target):
             if nums[j] == a:
                 return i, j
 
-# approach 2
+# approach 2 (O(n^2))
 # class Solution:
 #     def twoSum(self, nums: List[int], target: int) -> List[int]:
 # def twoSum(nums, target):
