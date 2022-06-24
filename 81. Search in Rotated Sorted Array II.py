@@ -22,12 +22,12 @@
 #     def search(self, nums: List[int], target: int) -> bool:
 def search(nums, target):
         for i in range(len(nums)):
-            if target == nums[i]:            
-                return True
+                if target == nums[i]:            
+                        return True
         return False
 
 ## Driver code
 if __name__=='__main__':
-	nums = [2,5,6,0,0,1,2]
-	target = 0
-	print(search(nums, target))
+        nums = [2,5,6,0,0,1,2]
+        target = 0
+        print(search(nums, target))
