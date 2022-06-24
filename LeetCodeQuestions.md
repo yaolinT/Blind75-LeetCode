@@ -1,4 +1,4 @@
-### LeetCode Blind 75 List
+# LeetCode Blind 75 List
 
 ## Array
 
