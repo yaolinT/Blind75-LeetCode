@@ -20,6 +20,7 @@
 # Therefore it is not a palindrome.
 ###############################################################
 
+# approach 1
 # class Solution:
 #     def isPalindrome(self, x: int) -> bool:
 def isPalindrome(x):
