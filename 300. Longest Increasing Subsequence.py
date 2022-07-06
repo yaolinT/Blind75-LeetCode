@@ -16,7 +16,8 @@
 # Output: 1
 ###############################################################
 
-# approcah 1 (DP)
+# approcah 1 (DP, O(n^2))
+# reference: https://www.youtube.com/watch?v=cjWnW0hdF1Y&t=306s
 # class Solution:
 #     def lengthOfLIS(self, nums: List[int]) -> int:
 def lengthOfLIS(nums):
